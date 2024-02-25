@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "inventario-app:build:production"
+              "buildTarget": "inventario-app:build:production"
             },
             "development": {
-              "browserTarget": "inventario-app:build:development"
+              "buildTarget": "inventario-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "inventario-app:build"
+            "buildTarget": "inventario-app:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c84a0ff8-9134-4b90-b40c-ad059151df99"
   }
 }
